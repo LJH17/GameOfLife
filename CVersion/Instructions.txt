@@ -1,0 +1,67 @@
+Game of Life
+------------
+
+Compile by running:
+    gcc -ansi -Wall GameOfLife.c -o GameOfLife
+
+Either use one of the included configurations (located in the Configurations folder) or make your own.
+
+The configuration specifies the number and position of cells that are initially live.
+The number of initially live cells is provided in the first line of the file.
+Then the row/column position of each live cell is provided on a separate line.
+For example, the “traffic light” life form is defined by the file 'traffic', which contains:
+
+3
+2 1
+2 2
+2 3
+
+In this case three cells are initially alive, with row/column positions as indicated.
+
+Run the program as follows:
+
+./GameOfLife <initial config file path> <width> <height> <no. of generations>
+
+For example, "./GameOfLife ./Configurations/traffic 7 5 3" gives:
+
+*-------*
+|       |
+|       |
+| XXX   |
+|       |
+|       |
+*-------*
+
+
+*-------*
+|       |
+|  X    |
+|  X    |
+|  X    |
+|       |
+*-------*
+
+
+*-------*
+|       |
+|       |
+| XXX   |
+|       |
+|       |
+*-------*
+
+
+*-------*
+|       |
+|  X    |
+|  X    |
+|  X    |
+|       |
+*-------*
+
+Finished
+
+Note: The max width and height to print in the terminal can be adjusted in GameOfLife.c under:
+
+#define MAX_WIDTH <int>
+#define MAX_HEIGHT <int>
