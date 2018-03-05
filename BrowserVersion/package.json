@@ -1,0 +1,11 @@
+{
+  "name": "game-of-life",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "http-server ./app -p 7000 -o"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
